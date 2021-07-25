@@ -1,0 +1,152 @@
+<!-- THE PURCHASE AND DONATE PAGE -->
+<!doctype html>
+<html lang="en">
+    <head> <!-- CONTAINS METADATA -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is the Dehiwala Zoo Purchase and Donate page.">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json"> 
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <title>Dehiwala Zoo</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+            <div id="firstDiv">
+                <nav class="mainNav">
+                    <ul>
+                        <li><a href="index.html"><span class="navText">Home</span></a></li>
+                        <li><a href="animalsplants.html"><span class="navText">Animals and Plants</span></a></li>
+                        <li><a href="activities.html"><span class="navText">Activities</span></a></li>
+                        <li><a class="active" href="#"><span class="navText">Purchase and Donate</span></a></li>
+                        <li><a href="contact.html"><span class="navText">Contact Us</span></a></li>
+                    </ul>
+                </nav>
+                <header>
+                    <h1>DEHIWALA ZOO</h1>
+                </header>
+                <img src="images/home3.jpg" alt="These are zebras." class="firstImg">
+                <!-- image taken from https://holidayswithkids.com.au/best-conservation-zoos/ -->
+            </div>
+            <div class="gridContainer1">
+            <div class="gridItem1">
+            <h2 class="h2">PURCHASE</h2>
+                    <form method="GET">
+                      <h3>TICKET TYPE</h3>
+                      <input type="radio" id="dayPass" name="ticketType" value="Day Pass" class="selection"><label for="dayPass"> Day Pass</label><br>
+                      <input type="radio" id="studentPass" name="ticketType" value="Student Pass" class="selection"><label for="studentPass"> Student Pass</label><br>
+                      <input type="radio" id="foreignerPass" name="ticketType" value="Foreigner Pass" class="selection"><label for="foreignerPass"> Foreigner Pass</label><br>
+                      <h3>NUMBER OF TICKETS</h3>
+                      <label for="adultNum">Adults : </label><input type="number" id="adultNum" name="ticketNum" min="0" max="100" value="0" class="selection">
+                      <label for="childNum">Children : </label><input type="number" id="childNum" name="ticketNum" min="0" max="100" value="0" class="selection">
+                      <h3>DURATION</h3>
+                      <input type="radio" id="threeHours" name="ticketDuration" value="Three Hours" class="selection"><label for="threeHours"> 3 Hours</label><br>
+                      <input type="radio" id="half" name="ticketDuration" value="Half Day" class="selection"><label for="half"> ½ Day</label><br>
+                      <input type="radio" id="full" name="ticketDuration" value="Full Day" class="selection"><label for="full"> Full Day</label><br>
+                      <input type="radio" id="two" name="ticketDuration" value="Two Days" class="selection"><label for="two"> 2 Days</label><br>
+                      <h3>EXTRAS (OPTIONAL)</h3>
+                      <label for="annualPass">Annual Passes : </label><input type="number" id="annualPass" name="ticketExtras" min="0" max="100" value="0" class="selection">
+                      <label for="foodToken">Food Tokens : </label><input type="number" id="foodToken" name="ticketExtras" min="0" max="100" value="0" class="selection">
+                      <input type="submit" value="Add to Favourite" id="addFav">
+                      <input type="submit" value="Order Favoruite" id="getFav">
+                      <input type="submit" value="Add to Order" id="addOrder">
+                      <h4>Current Order(s) : </h4><p id="current1" class="current"></p><p id="current2" class="current"></p><p id="current3" class="current"></p><p id="current4" class="current"></p><p id="current5" class="current"></p><p id="current6" class="current"></p><br>
+                      <h4>Current Order(s) Cost : </h4><p id="currentCost">0</p><br>
+                      <h4>Overall Order : </h4><p id="overall"></p><br>
+                      <h4>Overall Cost : </h4><p id="overallCost">0</p><br>
+                      <input type="submit" value="Place Order" id="place">
+                      <input type="submit" value="Check Loyalty" id="loyalty">
+
+                      <!--<input type="text" id="fname" name="firstname" placeholder="Enter your text here...">-->
+                    </form>
+            </div>
+            <div class="gridItem1">
+            <h2 class="h2" id="h2">DONATE</h2>
+            <form method="GET">
+                <h3>CONTACT DETAILS</h3>
+                <label>Full Name</label>
+                      <input type="text" name="firstname" placeholder="Your full name..." required>
+                      <label>E-mail</label>
+                      <input type="text" name="lastname" placeholder="Your e-email..." required>
+                <h3>PAYMENT</h3>
+                <label class="cards">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label>Name on Card</label>
+                      <input type="text" name="cardname" placeholder="Name on your card..." required>
+
+                      <label>Credit Card Number</label>
+                      <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444" pattern="[0-9]{4}[-][0-9]{4}[-][0-9]{4}[-][0-9]{4}" title="4 sets of four digit numbers eparated by hyphens" required>
+                      <label>Expiry Month</label>
+                      <select name="expmonth" required size="12">
+                        <!--<option value="default" class="default">SELECT :</option>-->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                      <label>Year of Expiry</label>
+                      <input type="number" name="expyear" placeholder="Your card's year of expiry..." min="2021" required>
+                      <label>CVV</label>
+                      <input type="number" name="cvv" placeholder="Your CVV number..." min="000" max="999" title="3-Digit number" required>
+                      <h3>ADDRESS</h3>
+                      <label>Address Line No.1</label>
+                      <input type="text" name="addressF" placeholder="First line of address..." required>
+                      <label>Address Line No.2</label>
+                      <input type="text" name="addressS" placeholder="Second line of your address...">
+                      <label>City/Town</label>
+                      <input type="text" name="cityOrTown" placeholder="Name of your city/town..." required>
+                      <label>State/Province</label>
+                      <input type="text" name="ystate" placeholder="Your state/province..." required>
+                      <label>Zip</label>
+                      <input type="number" name="zip" placeholder="Your zip code..." min="0000" max="4" title="4-Digit number">
+
+                      <h3>Donation Amount</h3>
+                      <p>LKR :</p><select id="damount" name="donationamount" required size="7">
+                        <!--<option value="default" id="default">0</option>-->
+                        <option value="1">100.00</option>
+                        <option value="2">250.00</option>
+                        <option value="3">500.00</option>
+                        <option value="4">1000.00</option>
+                        <option value="5">2500.00</option>
+                        <option value="6">5000.00</option>
+                        <option value="7">10000.00</option>
+                        </select>
+                        <input type="submit" value="Donate" id="donate">
+            </form>
+            </div>
+            </div>        
+        <footer id="container">
+            <nav class="footNav">
+                <ul>
+                  <li><a href="#">Joel F.</a></li>
+                  <li><a href="#">011-2233556</a></li>
+                  <li><a href="#">cb009131@students.apiit.lk</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="purchasedonate.js"></script>
+    </body>
+</html>
+
+ 

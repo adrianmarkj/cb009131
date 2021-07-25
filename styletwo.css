@@ -1,0 +1,245 @@
+/* MOBILE FIRST FOR IPHONE X */
+
+/* BASE STYLES */
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/made_bon_voyage_regular.otf);
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: #1BB0CE;
+    font-family: myFont;
+    color: black;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+h2{
+    font-size: 2.8em;
+    text-align: center;
+}
+
+h2, h3{
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.description{
+    text-align: center;
+}
+
+.mainNav{
+    position: relative;
+    text-align: center;
+    background: #DAD6CA;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.mainNav ul{
+    border:none;
+    border-width:0.625em 0;
+    list-style:none;
+    margin:1em;
+    padding:1.25em;
+    text-align:center;
+}
+  
+.mainNav li{
+    font-size: 1.125em;
+    float: none;
+    display: inline-block;
+    margin: 0.3em;
+}
+  
+.mainNav a{
+    color: black;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.mainNav a.active{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.firstImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91.5%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+body{
+    background-color: #DAD6CA;
+    font-size: 16px;
+}
+
+.gridContainer{
+    text-align: justify;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridContainer > div{
+    background-color: #4F8699;
+    text-align: left;
+}
+
+.gridItem{
+    color: white;
+    padding: 1em;
+    height: auto;
+}
+
+.gridItem img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+article{
+    margin: 1em;
+    padding: 1em;
+    background-color: #1BB0CE;
+    color: white;
+}
+
+iframe{
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gridItem:nth-of-type(even){
+    margin-bottom: 1em;
+}
+
+/* MEDIA QUERY FOR IPADS */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    /* HOME PAGE */
+
+    .gridContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        margin: 1em;
+    }
+
+    .gridItem:nth-of-type(odd){
+        background-color: #DAD6CA;
+    }
+
+    .gridItem img{
+        width: 50%;
+        height: auto;
+    }
+
+    .gridItem:nth-of-type(5){
+        color: black;
+    }
+
+    .gridItem:nth-of-type(7){
+        color: black;
+        grid-column: 1 / span 2;
+    }
+
+    iframe{
+        width: 35em;
+        height: 20em;
+    }
+}
+
+/* MEDIA QUERY FOR LAPTOPS AND DESKTOPS */
+@media (min-width: 1025px){
+
+    *{
+        text-align: center;
+    }
+
+    h1{
+        margin-left: 1.15em;
+        margin-right: 1.15em;
+    }
+
+    body{
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    article{
+        margin: 4em;
+    }
+
+    .firstImg{
+        width: 45%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .mainNav ul{
+        position: relative;
+        display: inline-block;
+    }
+
+    .mainNav a:hover{
+        text-decoration: underline;
+    }
+
+    .footNav ul{
+        position: relative;
+        display: inline-block;
+    }
+
+    .active{
+        text-decoration: underline;
+        text-decoration-color: whitesmoke;
+    }
+    
+    .gridContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        margin: 4em;
+    }
+
+    .gridItem:nth-of-type(odd){
+        background-color: #DAD6CA;
+    }
+
+    .gridItem:nth-of-type(5){
+        color: black;
+    }
+
+    .gridItem:nth-of-type(7){
+        color: black;
+        grid-column: 1 / span 2;
+    }
+
+    .gridItem img{
+        width: 45%;
+        height: auto;
+    }
+
+    iframe{
+        width: 35em;
+        height: 20em;
+    }
+
+}

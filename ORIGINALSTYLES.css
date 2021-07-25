@@ -1,0 +1,320 @@
+@media (min-width: 1025px){
+/* COMMON STYLING */
+
+*{
+    font-family: 'Helvetica Neue', 'Helvetica Neue Light', Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 5.0em;
+    text-align: center;
+    margin-top: 0.75em;
+    margin-bottom: 0.2em;
+}
+
+h2{
+    font-size: 2.8em;
+}
+
+h2, h3{
+    margin: 0.5em, 0;
+    text-transform: uppercase;
+}
+
+main{
+    color: black;
+}
+
+header, footer{
+    padding: 0.3125em;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+body{
+    background-color:white;
+    background-image: url("images/mainbackground.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#firstDiv{
+    text-align: center;
+}
+
+.mainNav{
+    position: fixed;
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+    background:transparent;
+}
+
+.mainNav ul{
+    border:none;
+    border-width:0.625em 0;
+    list-style:none;
+    margin:0;
+    padding:1.25em;
+    text-align:center;
+    position: relative;
+    display: inline-block;
+}
+  
+.mainNav li{
+    font-size: 1.125em;
+    float: none;
+    display: inline-block;
+    width:15.3575em;
+    margin: 0;
+}
+  
+.mainNav a{
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mainNav a:hover{
+    text-decoration: underline;
+}
+
+.mainNav a.active{
+    text-decoration: underline;
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+.footNav{
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+    background:transparent;
+}
+
+.footNav ul{
+    border:none;
+    border-width:0.625em 0;
+    list-style:none;
+    margin:0;
+    padding:1.25em;
+    text-align:center;
+    position: relative;
+    display: inline-block;
+}
+  
+.footNav li{
+    font-size: 1.125em;
+    float: none;
+    display: inline-block;
+    width:15.625em;
+    margin: 0;
+}
+  
+.footNav a{
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footNav a:hover{
+    text-decoration: underline;
+}
+
+.footNav a.active{
+    text-decoration: underline;
+}
+
+.active{
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+main{
+    padding: 3em;
+    margin:0;
+}
+
+.firstImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 43.75em;
+    height: 19.8125em;
+}
+
+.description{
+    color: white;
+    text-align: center;
+}
+
+/* HOME PAGE */
+
+.gridContainer{
+    text-align: justify;
+    padding: 2em;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10em 4.375em;
+}
+
+.gridContainer > div{
+    background-color: white;
+    text-align: justify;
+}
+
+.gridItem{
+    padding: 1.875em;
+}
+
+.gridItem :nth-of-type(odd){
+    grid-column: 1;
+}
+
+.gridItem :nth-of-type(even){
+    grid-column: 2;
+} 
+
+/* ANIMALS AND PLANTS PAGE */
+
+#description{
+    color: white;
+    text-align: center;
+}
+
+#gridTable{
+    padding: 2em;
+    margin: 1.875em;
+    display: grid;
+    background-color: white;
+}
+
+table, td, th{
+    border: 0.0625em solid black;
+    text-align: center;
+    padding: 0.5em;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+tfoot{
+    text-align: center;
+}
+
+.tableImg{
+    width: 12.5em;
+    height: 12.5em;
+}
+
+caption{
+    font-style: italic;
+}
+
+/* ACTIVITES PAGE */
+.button{
+    padding: .8em;
+    background-color: #FFE4B5;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: .8em auto .8em 0;
+    width: 6.25em;
+}
+
+.p1{
+    font-weight: bold;
+}
+
+/* CONTACT US PAGE */
+
+#firstImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 25%;
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+  
+input[type=submit]{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.875em 1.25em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+textarea{
+    width: 100%;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    color: grey;
+}
+
+#default{
+    color: grey;
+}
+
+.gridContainer1{
+    text-align: justify;
+    padding: 2em;
+    margin: 2em 15em 2em 15em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10em 4.375em;
+}
+
+.gridContainer1 > div{
+    background-color: white;
+    text-align: left;
+}
+
+.gridItem1{
+    padding: 1.875em;
+}
+
+#p2{
+    padding-bottom: 1em;
+    font-size: large;
+}
+
+/* PURCHASE AND DONATE */
+} 

@@ -1,0 +1,188 @@
+/* MOBILE FIRST FOR IPHONE X */
+
+/* BASE STYLES */
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 4.0em;
+    text-align: center;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2{
+    font-size: 2.8em;
+    text-align: center;
+}
+
+h2, h3{
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+#description{
+    text-align: center;
+}
+
+.mainNav{
+    position: relative;
+    text-align: center;
+    background: #886B64;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.mainNav ul{
+    border:none;
+    border-width:0.625em 0;
+    list-style:none;
+    margin:1em;
+    padding:1.25em;
+    text-align:center;
+}
+  
+.mainNav li{
+    font-size: 1.125em;
+    float: none;
+    display: inline-block;
+    margin: 0.5em;
+}
+  
+.mainNav a{
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.mainNav a.active{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.firstImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91.5%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+body{
+    background-image: url("images/leopardprint.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 16px;
+}
+
+.gridContainer{
+    text-align: justify;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridContainer > div{
+    background-color: #604A4B;
+    text-align: left;
+}
+
+.gridItem{
+    color: white;
+    padding: 1em;
+    height: auto;
+}
+
+.gridItem img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+article{
+    margin: 1em;
+    padding: 1em;
+    background-color: #604A4B;
+    color: white;
+}
+
+iframe{
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MEDIA QUERY FOR IPADS */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    /* HOME PAGE */
+
+    .gridItem img{
+        width: 50%;
+        height: auto;
+    }
+
+    iframe{
+        width: 35em;
+        height: 20em;
+    }
+}
+
+/* MEDIA QUERY FOR LAPTOPS AND DESKTOPS */
+@media (min-width: 1025px){
+
+    *{
+        text-align: center;
+    }
+
+    body{
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .firstImg{
+        width: 45%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .mainNav ul{
+        position: relative;
+        display: inline-block;
+    }
+
+    .mainNav a:hover{
+        text-decoration: underline;
+    }
+
+    .footNav ul{
+        position: relative;
+        display: inline-block;
+    }
+
+    .active{
+        text-decoration: underline;
+        text-decoration-color: whitesmoke;
+    }
+    
+    .gridItem img{
+        width: 45%;
+        height: auto;
+    }
+
+    iframe{
+        width: 35em;
+        height: 20em;
+    }
+
+}

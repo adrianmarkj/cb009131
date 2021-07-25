@@ -1,0 +1,482 @@
+/* MOBILE FIRST FOR IPHONE X */
+
+/* BASE STYLES */
+
+*{
+    font-family: 'Helvetica Neue', 'Helvetica Neue Light', Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 4.0em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+h2{
+    font-size: 2.8em;
+}
+
+h2, h3{
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+main{
+    color: black;
+}
+
+body{
+    background-image: url("images/mainbackground.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.mainNav{
+    position: relative;
+    text-align: center;
+    background:transparent;
+    overflow: hidden;
+}
+
+.mainNav ul{
+    border:none;
+    border-width:0.625em 0;
+    list-style:none;
+    margin:0;
+    padding:1.25em;
+    text-align:center;
+}
+  
+.mainNav li{
+    font-size: 1.125em;
+    float: none;
+    display: inline-block;
+    margin: 0.5em;
+}
+  
+.mainNav a{
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mainNav a.active{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.firstImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 91.5%;
+    height: auto;
+}
+
+.description{
+    color: white;
+    text-align: center;
+}
+
+.footNav{
+    position: relative;
+    text-align: center;
+    background:transparent;
+    overflow: hidden;
+}
+
+.footNav ul{
+    border:none;
+    border-width:0.625em 0;
+    list-style:none;
+    margin:0;
+    padding:1.25em;
+    text-align:center;
+}
+  
+.footNav li{
+    font-size: 1.125em;
+    float: none;
+    display: inline-block;
+    margin: 0.95em;
+}
+  
+.footNav a{
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footNav a:hover{
+    text-decoration: underline;
+}
+
+.footNav a.active{
+    text-decoration: underline;
+}
+
+/* HOME PAGE */
+
+.gridContainer{
+    text-align: justify;
+    padding: 1em 1em 1em 1em;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridContainer > div{
+    background-color: white;
+    text-align: left;
+}
+
+.gridItem{
+    padding: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+}
+
+.homeImg{
+    width: 90%;
+    height: auto;
+    margin-left: 1em;
+}
+
+/* ANIMALS AND PLANTS PAGE */
+
+.description{
+    margin: 1.5em;
+    padding: 0;
+}
+
+.apimages{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    margin-bottom: 0.2em;
+}
+
+#gridTable{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left:0.05em;
+    padding-right:0.05em;
+    display: grid;
+    background-color: white;
+}
+
+table, td, th{
+    border: 0.0625em solid black;
+    text-align: center;
+    padding: 0.2em;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+tfoot{
+    text-align: center;
+}
+
+.tableImg{
+    width: 12.5em;
+    height: 12.5em;
+}
+
+caption{
+    font-style: italic;
+}
+
+.tableImg{
+    width: 70%;
+    height: auto;
+}
+
+/* ACTIVITIES PAGE */
+
+.button{
+    padding: .8em;
+    background-color: #FFE4B5;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: .8em auto .8em 0;
+    width: 6.25em;
+}
+
+/* CONTACT US PAGE */
+
+.h2{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#firstImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: auto;
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+  
+input[type=submit]{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.875em 1.25em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    color: grey;
+}
+
+.default{
+    color: grey;
+}
+
+.gridContainer1{
+    text-align: justify;
+    padding: 1em 1em 1em 1em;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3.5em;
+}
+
+.gridContainer1 > div{
+    background-color: white;
+    text-align: left;
+}
+
+.gridItem1{
+    padding: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    grid-column: 1;
+    height: auto;
+}
+
+#p2{
+    padding-bottom: 1em;
+    font-size: large;
+}
+
+/* PURCHASE AND DONATE PAGE */
+
+.cards{
+    font-weight: bold;
+}
+
+.icon-container{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#h2{
+    margin-top: 0.2em;
+}
+
+/* MEDIA QUERY FOR IPADS */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    /* HOME PAGE */
+
+    .homeImg{
+        width: 80%;
+        height: 80%;
+        margin-top: 2.5em;
+        margin-left: 3.5em;
+    }
+
+    .gridContainer{
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 3.5em;
+    }
+
+    .gridItem:nth-of-type(odd){
+        margin-right: 10em;
+    }
+
+    .gridItem:nth-of-type(even){
+        margin-left: 10em;
+    }
+    
+}
+
+/* MEDIA QUERY FOR LAPTOPS AND DESKTOPS */
+@media (min-width: 1025px){
+
+    h1{
+        font-size: 5.0em;
+        margin-top: 0;
+        margin-bottom: 0.2em;
+    }
+
+    header, footer{
+        padding: 0.3125em;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 auto;
+    }
+
+    main{
+        padding: 3em;
+        margin:0;
+    }
+
+    .mainNav{
+        width:100%;
+        margin:0 auto;
+    }
+
+    .mainNav ul{
+        position: relative;
+        display: inline-block;
+    }
+
+    .mainNav li{
+        width:15.3575em;
+        margin: 0;
+    }
+
+    .mainNav a:hover{
+        text-decoration: underline;
+    }
+
+    .footNav{
+        width:100%;
+        margin:0 auto;
+    }
+
+    .footNav ul{
+        position: relative;
+        display: inline-block;
+    }
+
+    .footNav li{
+        width:15.625em;
+        margin: 0;
+    }
+
+    .active{
+        text-decoration: underline;
+        text-decoration-color: whitesmoke;
+    }
+
+    .firstImg{
+        width: 43.75em;
+        height: 19.8125em;
+    }
+
+    /* HOME PAGE */
+
+    .gridContainer{
+        padding: 2em;
+        margin: 0;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 3.5em 4.375em;
+    }
+
+    .gridContainer > div{
+        text-align: justify;
+    }
+
+    .gridItem{
+        padding: 1.875em;
+    }
+
+    .gridItem :nth-of-type(odd){
+        grid-column: 1;
+    }
+    
+    .gridItem :nth-of-type(even){
+        grid-column: 2;
+    }
+
+    .homeImg{
+        width:550px;
+        height:363px;
+        margin:0;
+    }
+    
+    /* ANIMALS AND PLANTS PAGE */
+
+    #gridTable{
+        padding: 2em;
+        margin: 1.875em;
+    }
+
+    table, td, th{
+        padding: 0.5em;
+    }
+
+    /* ACTIVITIES PAGE */
+
+    .p1{
+        font-weight: bold;
+    }
+
+    /* CONTACT US PAGE */
+
+    #firstImg{
+        width: 25%;
+        height: 25%;
+    }
+
+    input[type=submit]:hover{
+        background-color: #45a049;
+    }
+
+    .gridContainer1{
+        padding: 2em;
+        margin: 2em 15em 2em 15em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 5em 4.375em;
+    }
+
+    .gridItem1{
+        padding: 1.875em;
+    }
+
+}
